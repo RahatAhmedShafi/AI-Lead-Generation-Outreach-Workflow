@@ -2,7 +2,7 @@
 
 A powerful **no-code AI automation agent** built with **Gumloop** to automatically find qualified leads and generate personalized outreach messages.
 
-![Workflow Preview](index.html)
+![Workflow Preview](https://www.gumloop.com/artifacts/4m8vnYgcwmKj9zbXbWYZ6P?version_id=QjhDyUkzwUZ2mWZYktJ9sU)
 
 ## 🔗 Live Gumloop Agent
 [View / Duplicate Agent](https://www.gumloop.com/agents/6EwZWrEBDpNRRdcaXfgyJs)
