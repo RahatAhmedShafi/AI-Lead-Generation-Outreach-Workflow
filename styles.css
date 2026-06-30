@@ -1,0 +1,117 @@
+/* ===== AI Lead Generation Workflow — Custom Styles ===== */
+
+:root {
+  --step-blue: #2563eb;
+  --step-green: #16a34a;
+  --step-amber: #d97706;
+  --step-purple: #7c3aed;
+  --step-teal: #0d9488;
+  --step-rose: #e11d48;
+}
+
+/* Flow connector line */
+.flow-line {
+  width: 3px;
+  height: 32px;
+  background: linear-gradient(to bottom, #cbd5e1, #94a3b8);
+  margin: 0 auto;
+  border-radius: 2px;
+}
+.dark .flow-line {
+  background: linear-gradient(to bottom, #475569, #334155);
+}
+
+/* Step number badge */
+.step-badge {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  font-weight: 800;
+  font-size: 1.1rem;
+  color: #fff;
+  flex-shrink: 0;
+}
+
+/* Animated pulse for trigger */
+@keyframes pulse-ring {
+  0% { box-shadow: 0 0 0 0 rgba(37, 99, 235, 0.4); }
+  70% { box-shadow: 0 0 0 12px rgba(37, 99, 235, 0); }
+  100% { box-shadow: 0 0 0 0 rgba(37, 99, 235, 0); }
+}
+.pulse-trigger {
+  animation: pulse-ring 2s infinite;
+}
+
+/* Card hover */
+.step-card {
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+.step-card:hover {
+  transform: translateY(-2px);
+}
+
+/* Detail tag */
+.detail-tag {
+  display: inline-block;
+  padding: 2px 10px;
+  border-radius: 9999px;
+  font-size: 0.72rem;
+  font-weight: 600;
+}
+
+/* Connector arrow */
+.arrow-down {
+  width: 0;
+  height: 0;
+  border-left: 8px solid transparent;
+  border-right: 8px solid transparent;
+  border-top: 10px solid #94a3b8;
+  margin: 0 auto;
+}
+.dark .arrow-down {
+  border-top-color: #475569;
+}
+
+/* Branch container */
+.branch-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 16px;
+}
+@media (min-width: 640px) {
+  .branch-container {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+/* Config table */
+.config-table th {
+  text-align: left;
+  font-weight: 700;
+  font-size: 0.78rem;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  padding: 8px 12px;
+}
+.config-table td {
+  padding: 8px 12px;
+  font-size: 0.85rem;
+}
+.config-table tr {
+  border-bottom: 1px solid #e2e8f0;
+}
+.dark .config-table tr {
+  border-bottom-color: #1e293b;
+}
+
+/* Scrollbar for code blocks */
+.code-block::-webkit-scrollbar {
+  height: 6px;
+}
+.code-block::-webkit-scrollbar-thumb {
+  background: #94a3b8;
+  border-radius: 3px;
+}
